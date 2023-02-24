@@ -1,4 +1,4 @@
-<div class="section section-hero wf-section">
+<div id="$MenuTitleAtt" class="section section-hero wf-section">
   <div class="section-inner-hero">
     <div class="hero-text">
       <div class="hero-text-inner">

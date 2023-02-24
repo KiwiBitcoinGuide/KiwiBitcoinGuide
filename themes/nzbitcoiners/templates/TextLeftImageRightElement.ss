@@ -1,4 +1,4 @@
-<div id="about" class="section section-gray wf-section">
+<div id="$MenuTitleAtt" class="section section-gray wf-section">
     <div class="section-inner">
       <div class="section-title-block"><img src="$ThemeDir/images/section-header-bitcoin.svg" loading="lazy" alt="">
         <h1 class="section-title">$Title</h1>

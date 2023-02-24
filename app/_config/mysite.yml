@@ -20,6 +20,10 @@ Silverstripe\SiteConfig\SiteConfig:
   extensions:
     - SiteConfigExtension
 
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - BaseElementExtension
+
 SilverStripe\Assets\File:
   allowed_extensions:
     - svg

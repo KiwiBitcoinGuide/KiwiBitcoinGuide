@@ -13,7 +13,8 @@ class ContactBarElement extends BaseElement
 
     private static $description = 'Contact Bar ';
 
-    private static $db = [];
+    private static $db = [
+    ];
 
     private static $has_one = [];
 
