@@ -32,6 +32,9 @@ use SilverStripe\CMS\Controllers\ContentController;
             // See: https://docs.silverstripe.org/en/developer_guides/templates/requirements/
 
             Requirements::javascript('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+            Requirements::javascript('https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6391b419017fec8c8a3672e2');
+            Requirements::javascript($this->ThemeDir().'/javascript/nz-bitcoiners.js');
+
             Requirements::customScript(<<<js
                 WebFont.load({
                     google: {
