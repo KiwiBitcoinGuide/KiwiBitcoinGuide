@@ -1,10 +1,4 @@
-<footer class="footer" role="contentinfo">
-	<div class="inner">
-		<div class="unit size4of4 lastUnit">
-			<div class="left">
-				<a href="$BaseHref" class="brand" rel="home">$SiteConfig.Title</a>
-				<span class="arrow">&rarr;</span> <% include Navigation %></div>
-			<small class="right"><a href="http://simple.innovatif.com/about/">Theme</a> by Sara (Innovatif) / Powered by <a href="http://silverstripe.org">SilverStripe</a></small>
-		</div>
-	</div>
+<footer class="footer">
+    <a href="#" class="nav-logo w-nav-brand"><img src="$SiteConfig.Logo.URL" loading="lazy" alt="NZ Bitcoiners logo."></a>
+	$SiteConfig.FooterContent
 </footer>

@@ -1,8 +1,10 @@
 <?php
 
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\File;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\ORM\DataExtension;
 
 class SiteConfigExtension extends SilverStripe\ORM\DataExtension {
@@ -12,14 +14,22 @@ class SiteConfigExtension extends SilverStripe\ORM\DataExtension {
         'FooterContent' => 'HTMLText'
     ];
 
+    private static $owns = [
+        'Logo'
+    ];
+
 	private static $has_one = [
-        // 'Logo' => Image::class
+        'Logo' => File::class
     ];
 
     public function updateCMSFields(FieldList $fields) 
     {
         $fields->addFieldToTab("Root.Main", 
-            HTMLTextEditor::Create("FooterContent")
+            UploadField::Create("Logo")
         );
+        $fields->addFieldToTab("Root.Main", 
+            HTMLEditorField::Create("FooterContent")
+        );
+
     }
 }
