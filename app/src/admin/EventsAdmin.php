@@ -1,7 +1,7 @@
 <?php
 use SilverStripe\Admin\ModelAdmin;
 
-class MyAdmin extends ModelAdmin 
+class EventsAdmin extends ModelAdmin 
 {
 
     private static $managed_models = [
