@@ -31,6 +31,8 @@ If you would like to make changes to the Silverstripe core codebase, we have an 
  * [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
  * [License](./LICENSE)
 
-# GitPod Apache Notes
+# GitPod Docker / Apache Notes
+
+Based off: https://gitpodio-apacheexample-s8m6iczbaxi.ws-us88.gitpod.io/
 
 Gitpod.dockerfile and .gitpod.yml enable apache, which then enables everything else. You can access this on port 8080 by typing ```gp url``` to get the root url then adding ```/public/index.php``` to the end. Need to work out how to utilise ..htaccess.
