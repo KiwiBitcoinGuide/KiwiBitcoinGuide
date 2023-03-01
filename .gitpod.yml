@@ -7,13 +7,10 @@ ports:
 tasks:
 - name: Terminal
   command: >
-    composer install
-    echo "";
-    echo "Commands you can try:";
-    echo " * apachectl stop";
-    echo " * apachectl start";
-    echo " * gp open /var/log/apache2/access.log";
-    echo " * gp open /var/log/apache2/error.log";
+    composer install;
+- name: Mysql
+  command: >
+    composer install;    
 - name: Apache
   command: >
     apachectl start &&
