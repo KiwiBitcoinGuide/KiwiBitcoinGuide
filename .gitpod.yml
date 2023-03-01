@@ -20,5 +20,5 @@ tasks:
     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
 - name: Mysql
   command: >
-    mysql -u root -p root nzbitcoiners < example.sql
+    mysql -u root -p nzbitcoiners < example.sql
     
