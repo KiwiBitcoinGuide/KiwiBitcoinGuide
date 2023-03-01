@@ -16,7 +16,7 @@ tasks:
 - name: Apache
   command: >
     apachectl start &&
-    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
+    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log;g
 - name: Mysql
   command: >
     mysql -u root -p nzbitcoiners < example.sql;
