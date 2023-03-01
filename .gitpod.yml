@@ -12,7 +12,6 @@ ports:
 tasks:
 - name: Terminal
   command: >
-    echo "Install Composer";
     composer install;
 - name: Apache
   command: >
