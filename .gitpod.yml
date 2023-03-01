@@ -14,11 +14,11 @@ tasks:
   command: >
     echo "Install Composer";
     composer install;
+    echo "Connect to database";
+    mysql -u root -p nzbitcoiners < example.sql;
 - name: Apache
   command: >
     apachectl start &&
     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
-- name: Mysql
-  command: >
-    mysql -u root -p nzbitcoiners < example.sql
+
     
