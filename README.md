@@ -1,32 +1,24 @@
-## Overview
 
-[![CI](https://github.com/silverstripe/silverstripe-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/silverstripe-installer/actions/workflows/ci.yml)
-[![Silverstripe supported module](https://img.shields.io/badge/silverstripe-supported-0071C4.svg)](https://www.silverstripe.org/software/addons/silverstripe-commercially-supported-module-list/)
+### Install instructions
 
-Base project folder for a Silverstripe ([http://silverstripe.org](http://silverstripe.org)) installation. Required modules are installed via [http://github.com/silverstripe/recipe-cms](http://github.com/silverstripe/recipe-cms). For information on how to change the dependencies in a recipe, please have a look at [https://github.com/silverstripe/recipe-plugin](https://github.com/silverstripe/recipe-plugin). In addition, installer includes [theme/simple](https://github.com/silverstripe-themes/silverstripe-simple) as a default theme.
+* install apache or nginx
+* install mysql or any other SQL DB
+* Install PHP 8.0
+* Install PHP extensions such as bcmath and any others required
+    * sudo apt install php8.0-{imagick,bz2,curl,intl,mysql,readline,xml,fpm,mbstring,zip,bcmath,gd}
+* Install composer https://getcomposer.com
+* Clone the repo into your /var/www/ dir or another web serveable dir.
+* In project root run "composer install"
+* If there are missing extension errors then install any missing php-extensions using command above
+* In project root run "composer vendor-expose" (this sets up resource and theme symlinks)
+* Create an SQL database "nzbitcoiners" or any other name
+* set up a user with permissions for that database
+* rename .env.example to .env and set all db config
+* go to http://localhost/nzbitcoiners/dev/build?flush=1 this will create the DB and flush/recreate the model
+* if there are errors regards public/assets then chmod 777 this dir.
+* if there are errors regards .htaccess permissions then delete public/assets/.htaccess and refresh the build & flush page
 
-## Installation ##
+### Further reading
 
-`composer create-project silverstripe/installer my-app`
+* [Silverstripe install instructions](https://docs.silverstripe.org/en/4/getting_started/)
 
-See [Getting Started](https://docs.silverstripe.org/en/4/getting_started/) for more information.
-
-## Bugtracker ##
-
-Bugs are tracked on github.com ([framework issues](https://github.com/silverstripe/silverstripe-framework/issues),
-[cms issues](https://github.com/silverstripe/silverstripe-cms/issues)).
-Please read our [issue reporting guidelines](https://docs.silverstripe.org/en/4/contributing/issues_and_bugs/).
-
-## Development and Contribution ##
-
-If you would like to make changes to the Silverstripe core codebase, we have an extensive [guide to contributing code](https://docs.silverstripe.org/en/4/contributing/code/).
-
-## Links ##
-
- * [Changelogs](https://docs.silverstripe.org/en/4/changelogs/)
- * [Bugtracker: Framework](https://github.com/silverstripe/silverstripe-framework/issues)
- * [Bugtracker: CMS](https://github.com/silverstripe/silverstripe-cms/issues)
- * [Bugtracker: Installer](https://github.com/silverstripe/silverstripe-installer/issues)
- * [Forums](http://silverstripe.org/forums)
- * [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
- * [License](./LICENSE)
