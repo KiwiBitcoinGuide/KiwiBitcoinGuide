@@ -22,3 +22,9 @@
 
 * [Silverstripe install instructions](https://docs.silverstripe.org/en/4/getting_started/)
 
+### Docker
+
+```
+docker build -t silverstripe .
+docker compose up
+```
