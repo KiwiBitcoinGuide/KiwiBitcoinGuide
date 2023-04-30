@@ -1,9 +1,16 @@
-<% include SideBar %>
-<div class="content-container unit size3of4 lastUnit">
-	<article>
-		<h1>$Title</h1>
-		<div class="content">$Content</div>
-	</article>
-		$Form
-		$CommentsForm
+<div class="article wf-section">
+	<div class="article-list">
+	<% if ParentID > 0 %>
+		<a class="article-back" href="$Parent.Link">Back to $Parent.Title</a>
+	<% end_if %>
+	  <div class="section-title-block"><img src="$ThemeDir/images/section-header-bitcoin.svg" loading="lazy" alt="">
+	    <h1 class="section-title">$Title</h1>
+	  </div>
+
+	  <div class="article-list-inner">
+	    <div class="content">$Content</div>
+		<% include SideBar %>	
+	  </div>
+	</div>
 </div>
+			
