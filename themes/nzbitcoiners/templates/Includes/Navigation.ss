@@ -11,7 +11,7 @@
 		<a href="$Link" class="nav-link w-nav-link">$MenuTitle.XML</a>
 		<%--<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>--%>
 		 <% loop $ElementalArea.ElementControllers %>
-	    	<% if $MenuTitle && not First %>
+	    	<% if $MenuTitle && not First && not HideFromNav %>
 				<a href="$Up.Up.Link#$MenuTitleAtt" class="nav-link w-nav-link">$MenuTitle</a>
 			<% end_if %>
 	    <% end_loop %>

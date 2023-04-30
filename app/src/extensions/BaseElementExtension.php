@@ -13,7 +13,8 @@ class BaseElementExtension extends SilverStripe\ORM\DataExtension {
 
 
 	private static $db = [
-        'MenuTitle' => 'Varchar(255)'
+        'MenuTitle' => 'Varchar(255)',
+        'HideFromNav' => 'Boolean',
     ];
 
     private static $owns = [
@@ -29,6 +30,10 @@ class BaseElementExtension extends SilverStripe\ORM\DataExtension {
         $fields->addFieldToTab("Root.Main", 
             TextField::Create("MenuTitle")
         );
+        $fields->addFieldToTab("Root.Main", 
+            CheckboxField::Create("HideFromNav")
+        );
+
 
         return $fields;
     }
