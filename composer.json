@@ -9,7 +9,6 @@
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/login-forms": "~4.8.0@stable",
         "dnadesign/silverstripe-elemental": "^4",
-        "dynamic/silverstripe-elemental-blocks": "^3.0",
         "undefinedoffset/sortablegridfield": "^2.1"
     },
     "require-dev": {
