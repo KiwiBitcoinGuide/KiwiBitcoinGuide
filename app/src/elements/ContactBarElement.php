@@ -31,6 +31,6 @@ class ContactBarElement extends BaseElement
 
     public function getType()
     {
-        return 'Contact Bar';
+        return 'NZB Contact Bar';
     }
 }

@@ -36,7 +36,7 @@ class EventsElement extends BaseElement
 
     public function getType()
     {
-        return 'Events Element';
+        return 'NZB Events Element';
     }
 
     public function Events() {

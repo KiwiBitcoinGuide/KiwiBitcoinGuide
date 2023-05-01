@@ -30,7 +30,7 @@ class ProjectsListElement extends BaseElement
 
     public function getType()
     {
-        return 'Projects List';
+        return 'NZB Projects List';
     }
 
     public function Projects() {

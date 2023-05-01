@@ -31,6 +31,6 @@ class HeroBannerElement extends BaseElement
 
     public function getType()
     {
-        return 'Hero Banner Element';
+        return 'NZB Hero Banner Element';
     }
 }

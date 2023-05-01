@@ -31,6 +31,6 @@ class TextLeftImageRightElement extends BaseElement
 
     public function getType()
     {
-        return 'Text Left Image Right Element';
+        return 'NZB Text Left Image Right Element';
     }
 }
