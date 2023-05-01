@@ -40,6 +40,6 @@ class EventsElement extends BaseElement
     }
 
     public function Events() {
-        return Event::get();
+        return Event::get()->filter('Date:GreaterThanOrEqual', strtotime('now'));
     }
 }
