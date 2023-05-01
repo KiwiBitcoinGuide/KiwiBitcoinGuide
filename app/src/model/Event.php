@@ -12,5 +12,14 @@ class Event extends DataObject
         'LocationLink'=> 'Text'
     ];
 
+    private static $summary_fields = [
+        'Title',
+        'Date.Nice',
+        'Link',
+        'Location',
+        'LocationLink'
+    ];
+
+    private static $default_sort = 'Date DESC';
     private static $has_one = [];
 }
