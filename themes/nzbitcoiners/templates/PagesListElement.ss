@@ -4,7 +4,7 @@
       <h1 class="section-title">Articles &amp; Guides</h1>
     </div>
     <div class="article-preview-container">
-      <% loop LinkedPages %>
+      <% loop LinkedPages.Sort('SortOrder ASC') %>
         <div class="article-preview-item">
           <div class="article-preview-meta">
             <h3 class="article-preview-header">$Title</h3>
