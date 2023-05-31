@@ -1,4 +1,4 @@
 <footer class="footer">
-    <a href="#" class="nav-logo w-nav-brand"><img src="$SiteConfig.Logo.URL" loading="lazy" alt="NZ Bitcoiners logo."></a>
+    <a href="#" class="footer-logo"><img src="$SiteConfig.Logo.URL" loading="lazy" alt="NZ Bitcoiners logo."></a>
 	$SiteConfig.FooterContent
 </footer>
