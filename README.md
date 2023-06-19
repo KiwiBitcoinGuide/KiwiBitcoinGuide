@@ -1,3 +1,6 @@
+# How to Contribute to The Kiwi Bitcoin Guide
+
+Please write [an issue](https://github.com/KiwiBitcoinGuide/KiwiBitcoinGuide/issues/new) with your contribution
 
 ### Install instructions
 
