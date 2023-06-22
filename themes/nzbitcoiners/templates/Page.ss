@@ -15,7 +15,11 @@
 
 	<meta content="<% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %>" property="og:title">
 	<meta content="$MetaDescription" property="og:description">
-	<meta content="$PagePreviewImage.AbsoluteURL" property="og:image">
+	<% if $PagePreviewImage %>
+		<meta content="$PagePreviewImage.AbsoluteURL" property="og:image">
+	<% else %>
+		<meta content="$SiteConfig.DefaultOgpImage.AbsoluteURL" property="og:image">
+	<% end_if %>
 	<meta content="<% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %>" property="twitter:title">
 	<meta content="$MetaDescription" property="twitter:description">
 	<meta content="$PagePreviewImage.AbsoluteURL" property="twitter:image">
