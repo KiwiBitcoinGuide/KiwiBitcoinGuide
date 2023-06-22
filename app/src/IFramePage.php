@@ -4,15 +4,29 @@ namespace {
 
 use SilverStripe\CMS\Controllers\ContentController;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\TextareaField;
 
-    class BtcMapPage extends Page
+    class IframePage extends Page
     {
-        private static $db = [];
+        private static $db = [
+            'Src' => 'Text',
+            'Height' => 'Int',
+        ];
 
         private static $has_one = [];
+
+        public function getCMSFields() {
+            $fields = parent::getCMSFields();
+
+            $fields->insertAfter('Content', TextareaField::create('Src', 'Iframe Src'));
+            $fields->insertAfter('Src', TextField::create('Height', 'iframe height in pixels (integer)'));
+
+            return $fields;
+        }
     }
 
-    class BtcMapPageController extends PageController
+    class IframePageController extends PageController
     {
         /**
          * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -39,6 +53,6 @@ use SilverStripe\CMS\Model\SiteTree;
         }
 
 
-        
+
     }
 }

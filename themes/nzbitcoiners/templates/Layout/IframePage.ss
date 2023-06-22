@@ -10,7 +10,7 @@
 	  <div class="article-list-inner">
 	    <div class="content">$Content</div>
 		<% include SideBar %>	
-		<iframe height="1000" frameBorder="0" src="https://btcmap.org/map#6/-41.57436/172.73804"></iframe>
+		<iframe height="$Height" width="100%" frameBorder="0" src="$Src"></iframe>
 	  </div>
 	</div>
 
