@@ -12,6 +12,7 @@ use SilverStripe\Forms\TextareaField;
         private static $db = [
             'Src' => 'Text',
             'Height' => 'Int',
+            'Styles' => 'Text',
         ];
 
         private static $has_one = [];
@@ -21,6 +22,7 @@ use SilverStripe\Forms\TextareaField;
 
             $fields->insertAfter('Content', TextareaField::create('Src', 'Iframe Src'));
             $fields->insertAfter('Src', TextField::create('Height', 'iframe height in pixels (integer)'));
+            $fields->insertAfter('Height', TextareaField::create('Styles', 'iframe styles CSS'));
 
             return $fields;
         }

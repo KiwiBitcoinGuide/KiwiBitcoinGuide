@@ -10,7 +10,7 @@
 	  <div class="article-list-inner">
 	    <div class="content">$Content</div>
 		<% include SideBar %>	
-		<iframe height="$Height" width="100%" frameBorder="0" src="$Src"></iframe>
+		<iframe height="$Height" width="100%" frameBorder="0" src="$Src" style="$Styles"></iframe>
 	  </div>
 	</div>
 
