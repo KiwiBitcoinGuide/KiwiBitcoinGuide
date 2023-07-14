@@ -15,17 +15,22 @@ class SiteConfigExtension extends SilverStripe\ORM\DataExtension {
     ];
 
     private static $owns = [
-        'Logo'
+        'Logo',
+        'DefaultOgpImage'
     ];
 
 	private static $has_one = [
-        'Logo' => File::class
+        'Logo' => File::class,
+        'DefaultOgpImage' => File::class
     ];
 
     public function updateCMSFields(FieldList $fields) 
     {
         $fields->addFieldToTab("Root.Main", 
             UploadField::Create("Logo")
+        );
+        $fields->addFieldToTab("Root.Main", 
+            UploadField::Create("DefaultOgpImage")
         );
         $fields->addFieldToTab("Root.Main", 
             HTMLEditorField::Create("FooterContent")

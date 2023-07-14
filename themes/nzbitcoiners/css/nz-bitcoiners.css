@@ -1,6 +1,6 @@
 body {
-  font-family: 'Open Sans', sans-serif;
   color: #000;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -15,10 +15,10 @@ a {
 }
 
 .section-inner-hero {
-  display: flex;
   max-width: 1800px;
-  padding: 40px 8vw 80px;
   justify-content: center;
+  padding: 40px 8vw 80px;
+  display: flex;
 }
 
 .text-block {
@@ -26,74 +26,62 @@ a {
 }
 
 .navbar {
-  display: flex;
   height: 110px;
   max-width: 100%;
+  background-color: #f3f3f3;
   justify-content: space-between;
-  background-color: #2e2e2e;
+  display: flex;
 }
 
 .nav-link {
   color: #fff;
-}
-
-.nav-link {
-  padding-right: 12px;
+  color: #000;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .nav-link:hover {
-  color: #fff;
   text-decoration: underline;
 }
 
-.nav-link:visited {
-  color: #fff;
-}
-
-.nav-link.w--current {
-  color: #fff;
-}
-
-.nav-link.w--current:hover {
-  color: #fff;
+.nav-link.w--current, .nav-link.w--current:hover {
+  color: #000;
 }
 
 .nav-logo {
-  display: flex;
   height: 100%;
   max-width: 100%;
-  margin-right: 50px;
   align-items: center;
+  margin-right: 50px;
+  display: flex;
 }
 
 .container {
-  display: flex;
   min-width: 100%;
-  padding-right: 5vw;
-  padding-left: 5vw;
   justify-content: space-around;
   align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
 }
 
 .section {
-  display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  display: flex;
 }
 
 .section.section-hero {
   width: 100%;
   min-height: auto;
   min-width: 100%;
-  background-color: #2e2e2e;
 }
 
 .section.section-follow {
   min-height: 40vh;
-  justify-content: center;
   background-color: #f7931a;
+  justify-content: center;
 }
 
 .section.section-gray {
@@ -105,11 +93,11 @@ a {
 }
 
 .hero-text {
-  display: flex;
   width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  display: flex;
 }
 
 .hero-image {
@@ -117,16 +105,16 @@ a {
 }
 
 .body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
 }
 
 .hero-text-block {
   width: auto;
   max-width: 600px;
+  color: #121212;
   margin-bottom: 20px;
   padding-right: 40px;
-  color: #fff;
   font-size: 1.6vh;
   line-height: 1.5em;
 }
@@ -137,55 +125,71 @@ a {
 }
 
 .hero-link {
+  background-image: url('../images/hero-button-bitcoin.svg');
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #f7931a;
+  border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px 50px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #f7931a;
-  border-radius: 25px;
-  background-image: url('../images/hero-button-bitcoin.svg');
-  background-position: 0% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
   text-decoration: none;
 }
 
 .hero-link.hero-link-bitcoin {
-  padding-right: 30px;
-  padding-left: 60px;
-  border-radius: 100px;
   background-image: url('../images/hero-button-telegram.svg');
-  background-position: -1px 50%;
+  background-position: -1px;
   background-size: contain;
+  border-radius: 100px;
+  padding-left: 60px;
+  padding-right: 30px;
 }
 
-.hero-link.hero-link-email {
-  margin-bottom: 0px;
-  padding-right: 30px;
-  padding-left: 60px;
-  border-radius: 100px;
+.hero-link.hero-link-full {
+  color: #fff;
+  background-color: #f7931a;
   background-image: url('../images/hero-email.svg');
-  background-position: -1px 50%;
+  background-position: -1px;
+  background-size: auto;
+  border-radius: 100px;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.hero-link.hero-link-full.hero-link-telegram {
+  background-image: url('../images/hero-button-telegram.svg');
+  background-position: -1px;
+  background-size: auto;
+}
+
+.hero-link.hero-link-full.hero-link-meetups {
+  background-image: url('../images/hero-button-bitcoin.svg');
+  background-position: 0%;
   background-size: auto;
 }
 
 .hero-link-text {
-  padding-left: 0px;
-  color: #f7931a;
+  color: #fff;
+  padding-left: 0;
   text-decoration: none;
 }
 
+.hero-link-text.orange {
+  color: #f7931a;
+}
+
 .hero-text-inner {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  display: flex;
 }
 
 .section-title-block {
-  display: flex;
-  margin-bottom: 40px;
   align-items: center;
+  margin-bottom: 40px;
+  display: flex;
 }
 
 .section-inner {
@@ -209,17 +213,17 @@ a {
 }
 
 .meetup-upcoming-item {
-  display: flex;
-  padding-top: 20px;
+  border-top: 1px solid #d9d9d9;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
+  display: flex;
 }
 
 .meetup-upcoming-text {
-  display: block;
   margin-bottom: 10px;
   text-decoration: none;
+  display: block;
 }
 
 .meetup-upcoming-text.meeting-upcoming-venue {
@@ -238,7 +242,7 @@ a {
 }
 
 .text-block-2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .about-container {
@@ -246,27 +250,27 @@ a {
 }
 
 .section-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 15px;
 }
 
 .follow-link {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px 50px;
-  border-radius: 25px;
-  background-color: #fff;
-  text-align: center;
   text-decoration: none;
 }
 
 .contact {
-  display: flex;
-  padding-right: 40px;
-  padding-left: 40px;
   flex-direction: column;
   align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
 }
 
 .contact.contact-telegram {
@@ -278,21 +282,21 @@ a {
 }
 
 .social-link-block {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 .div-block {
   padding-top: 100px;
-  padding-right: 100px;
   padding-left: 100px;
+  padding-right: 100px;
 }
 
 .social-title {
+  color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #fff;
 }
 
 .social-text {
@@ -300,11 +304,7 @@ a {
   text-align: center;
 }
 
-.about-container-inner {
-  width: 50%;
-}
-
-.about-image-container {
+.about-container-inner, .about-image-container {
   width: 50%;
 }
 
@@ -327,15 +327,15 @@ a {
 }
 
 .nzmade-container {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .nzmade-item {
-  display: flex;
   width: 100%;
-  margin-bottom: 40px;
   align-items: center;
+  margin-bottom: 40px;
+  display: flex;
 }
 
 .div-block-4 {
@@ -343,20 +343,21 @@ a {
 }
 
 .footer {
-  display: flex;
   height: auto;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  background-color: #2e2e2e;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2e2e2e;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
 }
 
 .footer-byline {
   color: #fff;
-  font-size: 12px;
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
 }
 
 .footer-logo {
@@ -365,7 +366,7 @@ a {
 }
 
 .nzmade-title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -377,9 +378,8 @@ a {
 .nzmade-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .nzamade-image-container {
@@ -398,8 +398,8 @@ a {
 }
 
 .resources-item-link {
-  display: block;
   margin-bottom: 10px;
+  display: block;
 }
 
 .text-block-3 {
@@ -407,46 +407,46 @@ a {
 }
 
 .footer-cta {
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
 }
 
 .footer-link {
+  background-color: #fff;
+  border-radius: 25px;
   margin: 10px;
   padding: 5px 50px;
-  border-radius: 25px;
-  background-color: #fff;
   text-decoration: none;
 }
 
 .footer-link-text {
-  padding-left: 20px;
   color: #f7931a;
+  padding-left: 20px;
   text-decoration: none;
 }
 
 .footer-contact-text {
-  margin-bottom: 20px;
   color: #fff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .more-link {
+  background-color: #f7931a;
+  border: 1px #000;
+  border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px 50px;
-  border: 1px none #000;
-  border-radius: 25px;
-  background-color: #f7931a;
   text-decoration: none;
 }
 
 .more-link-text {
-  padding-left: 20px;
   color: #fff;
+  padding-left: 0;
   text-decoration: none;
 }
 
@@ -454,12 +454,16 @@ a {
   width: 80%;
 }
 
+.nav-section {
+  background-color: #f3f3f3;
+}
+
 .article-title-block {
-  display: flex;
   max-width: 720px;
-  margin-bottom: 20px;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .article-inner {
@@ -470,10 +474,10 @@ a {
 }
 
 .article {
-  display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  display: flex;
 }
 
 .article.section-hero {
@@ -506,33 +510,33 @@ a {
 }
 
 .article-title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .article-author {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   font-weight: 400;
 }
 
 .article-list {
-  display: flex;
   width: 100%;
   height: 100%;
   max-width: 1800px;
   min-height: 80vh;
-  padding: 80px 8vw;
   flex-direction: column;
+  padding: 80px 8vw;
+  display: flex;
 }
 
 .article-copy {
-  display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  display: flex;
 }
 
 .article-copy.section-hero {
@@ -567,20 +571,16 @@ a {
   max-width: 80%;
 }
 
-.article-back {
-  margin-bottom: 10px;
-}
-
-.article-link {
+.article-back, .article-link {
   margin-bottom: 10px;
 }
 
 .follow {
-  display: flex;
-  padding-right: 40px;
-  padding-left: 40px;
   flex-direction: column;
   align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
 }
 
 .follow.follow-telegram {
@@ -592,31 +592,31 @@ a {
 }
 
 .article-contributors {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   font-style: normal;
   font-weight: 400;
 }
 
 .article-list-inner {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 .article-preview-item {
-  display: flex;
   max-width: 1200px;
-  margin-bottom: 20px;
-  padding: 60px 40px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 40px;
-  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  padding: 60px 40px;
+  display: flex;
 }
 
 .article-preview-header {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .article-preview-meta {
@@ -625,7 +625,89 @@ a {
 }
 
 .article-preview-go {
-  flex: 0 0 auto;
+  flex: none;
+}
+
+.site-credit {
+  padding-right: 40px;
+}
+
+.site-credit.site-credit-last {
+  padding-right: 0;
+}
+
+.site-credit-title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.site-credit-container {
+  display: flex;
+}
+
+.hero-title {
+  width: 80%;
+}
+
+.button-see-more {
+  color: #fff;
+  background-color: #f7931a;
+  border: 1px solid #f7931a;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.button-see-more.hero-link-bitcoin {
+  background-image: url('../images/hero-button-telegram.svg');
+  background-position: -1px;
+  background-size: contain;
+  border-radius: 100px;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.button-see-more.hero-link-full {
+  color: #fff;
+  background-color: #f7931a;
+  background-image: url('../images/hero-email.svg');
+  background-position: -1px;
+  background-size: auto;
+  border-radius: 100px;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.button-see-more.hero-link-full.hero-link-telegram {
+  background-image: url('../images/hero-button-telegram.svg');
+  background-position: -1px;
+  background-size: auto;
+}
+
+.button-see-more.hero-link-full.hero-link-meetups {
+  background-image: url('../images/hero-button-bitcoin.svg');
+  background-position: 0%;
+  background-size: auto;
+}
+
+.article-see-more-area {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.see-all-text {
+  color: #fff;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.see-all-text.orange {
+  color: #f7931a;
 }
 
 table, th, td {
@@ -641,10 +723,10 @@ table {
   }
 
   .container {
-    display: flex;
-    padding-right: 0vw;
-    padding-left: 0vw;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
   }
 
   .hero-text {
@@ -659,7 +741,7 @@ table {
   .hero-text-block {
     width: auto;
     max-width: none;
-    padding-right: 0px;
+    padding-right: 0;
     font-size: 20px;
   }
 
@@ -668,18 +750,14 @@ table {
   }
 
   .hero-link.hero-link-bitcoin {
-    padding-right: 30px;
     padding-left: 60px;
+    padding-right: 30px;
   }
 
-  .hero-link.hero-link-email {
-    margin-bottom: 0px;
-    padding-right: 30px;
+  .hero-link.hero-link-full {
+    margin-bottom: 0;
     padding-left: 60px;
-  }
-
-  .hero-link-text {
-    color: #f7931a;
+    padding-right: 30px;
   }
 
   .section-inner {
@@ -688,7 +766,7 @@ table {
   }
 
   .nav-menu {
-    background-color: #5e5e5e;
+    background-color: #fff;
   }
 
   .meetup-container {
@@ -702,8 +780,8 @@ table {
 
   .meetup-list {
     width: auto;
-    padding-top: 0px;
-    padding-left: 0vw;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .section-description {
@@ -715,29 +793,24 @@ table {
   }
 
   .follow-link {
-    padding-right: 40px;
-    padding-left: 40px;
-    background-color: #fff;
     color: #fff;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .contact {
     width: 50%;
   }
 
-  .contact.contact-telegram {
-    padding-right: 20px;
+  .contact.contact-telegram, .contact.contact-email {
     padding-left: 20px;
-  }
-
-  .contact.contact-email {
     padding-right: 20px;
-    padding-left: 20px;
   }
 
   .social-text {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .about-container-inner {
@@ -774,7 +847,7 @@ table {
   }
 
   .menu-button.w--open {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .text-block-3 {
@@ -786,10 +859,10 @@ table {
   }
 
   .more-link {
-    padding-right: 40px;
-    padding-left: 40px;
-    background-color: #f7931a;
     color: #fff;
+    background-color: #f7931a;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .more-link-text {
@@ -826,14 +899,9 @@ table {
     width: 50%;
   }
 
-  .follow.follow-telegram {
-    padding-right: 20px;
+  .follow.follow-telegram, .follow.follow-email {
     padding-left: 20px;
-  }
-
-  .follow.follow-email {
     padding-right: 20px;
-    padding-left: 20px;
   }
 
   .article-preview-item {
@@ -844,6 +912,21 @@ table {
     max-width: 100%;
     padding-right: 40px;
   }
+
+  .icon {
+    color: #f7931a;
+  }
+
+  .button-see-more.hero-link-bitcoin {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+
+  .button-see-more.hero-link-full {
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -851,14 +934,9 @@ table {
     border-radius: 60px;
   }
 
-  .hero-link.hero-link-bitcoin {
-    padding-right: 30px;
+  .hero-link.hero-link-bitcoin, .hero-link.hero-link-full {
     padding-left: 60px;
-  }
-
-  .hero-link.hero-link-email {
     padding-right: 30px;
-    padding-left: 60px;
   }
 
   .about-image {
@@ -873,24 +951,25 @@ table {
     margin-bottom: 20px;
   }
 
-  .article-author {
-    font-size: 16px;
-  }
-
-  .article-contributors {
+  .article-author, .article-contributors {
     font-size: 16px;
   }
 
   .article-preview-meta {
     max-width: 100%;
   }
+
+  .button-see-more.hero-link-bitcoin, .button-see-more.hero-link-full {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .section.section-follow {
+    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    flex-direction: column;
   }
 
   .rounded-image {
@@ -898,25 +977,29 @@ table {
   }
 
   .hero-link.hero-link-bitcoin {
-    padding-right: 20px;
-    padding-left: 40px;
     border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 20px;
   }
 
-  .hero-link.hero-link-email {
-    padding-right: 20px;
+  .hero-link.hero-link-full {
     padding-left: 40px;
+    padding-right: 20px;
   }
 
   .hero-link-text {
+    text-align: center;
     padding-left: 20px;
     font-size: 16px;
-    text-align: center;
   }
 
   .section-inner {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .nav-menu {
+    background-color: #fff;
   }
 
   .section-title {
@@ -950,14 +1033,14 @@ table {
 
   .footer {
     height: auto;
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .nzmade-text {
     width: auto;
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .nzamade-image-container {
@@ -970,15 +1053,11 @@ table {
   }
 
   .footer-link-text {
-    padding-left: 0px;
     text-align: center;
+    padding-left: 0;
   }
 
-  .more-link {
-    text-align: center;
-  }
-
-  .more-link-text {
+  .more-link, .more-link-text {
     text-align: center;
   }
 
@@ -988,9 +1067,9 @@ table {
   }
 
   .article.section-follow {
+    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    flex-direction: column;
   }
 
   .article-title {
@@ -1003,20 +1082,16 @@ table {
   }
 
   .article-copy.section-follow {
+    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    flex-direction: column;
   }
 
   .follow {
     padding-bottom: 40px;
   }
 
-  .follow.follow-telegram {
-    width: 100%;
-  }
-
-  .follow.follow-email {
+  .follow.follow-telegram, .follow.follow-email {
     width: 100%;
   }
 
@@ -1029,6 +1104,28 @@ table {
   }
 
   .article-preview-meta {
-    padding-right: 0px;
+    padding-right: 0;
+  }
+
+  .icon {
+    color: #f7931a;
+  }
+
+  .button-see-more.hero-link-bitcoin {
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .button-see-more.hero-link-full {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .see-all-text {
+    text-align: center;
+    font-size: 16px;
   }
 }
+
+

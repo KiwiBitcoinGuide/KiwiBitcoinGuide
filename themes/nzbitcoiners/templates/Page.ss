@@ -7,6 +7,15 @@
 <!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
 <!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CREWXSGNG"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-8CREWXSGNG');
+	</script>
 	<% base_tag %>
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %></title>
 	<meta charset="utf-8">
@@ -15,7 +24,11 @@
 
 	<meta content="<% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %>" property="og:title">
 	<meta content="$MetaDescription" property="og:description">
-	<meta content="$PagePreviewImage.AbsoluteURL" property="og:image">
+	<% if $PagePreviewImage %>
+		<meta content="$PagePreviewImage.AbsoluteURL" property="og:image">
+	<% else %>
+		<meta content="$SiteConfig.DefaultOgpImage.AbsoluteURL" property="og:image">
+	<% end_if %>
 	<meta content="<% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %>" property="twitter:title">
 	<meta content="$MetaDescription" property="twitter:description">
 	<meta content="$PagePreviewImage.AbsoluteURL" property="twitter:image">
