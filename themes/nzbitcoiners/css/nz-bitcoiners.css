@@ -632,6 +632,10 @@ a {
   padding-right: 40px;
 }
 
+.site-credit img {
+  width: 150px;
+}
+
 .site-credit.site-credit-last {
   padding-right: 0;
 }
