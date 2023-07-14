@@ -628,6 +628,13 @@ a {
   flex: 0 0 auto;
 }
 
+table, th, td {
+    border: solid 1px #282828;
+} 
+table {
+   width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .section-inner-hero {
     flex-direction: column;

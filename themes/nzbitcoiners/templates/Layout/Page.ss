@@ -9,7 +9,16 @@
 
 	  <div class="article-list-inner">
 	    <div class="content">$Content</div>
-		<% include SideBar %>	
+		<% if RelatedPages %>
+		<h3>Related Pages</h3>
+			<ul>
+				<% loop RelatedPages %>
+					<li>
+						<a href="$Link">$Title</a>
+					</li>
+				<% end_loop %>
+			</ul>
+		<% end_if %>
 	  </div>
 	</div>
 </div>
