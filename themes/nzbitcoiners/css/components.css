@@ -56,8 +56,12 @@ body {
 }
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
   display: inline-block;
+}
+.captionImage {
+  max-width: 100% !important;
 }
 html.w-mod-touch * {
   background-attachment: scroll !important;
